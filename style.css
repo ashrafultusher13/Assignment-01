@@ -10,26 +10,15 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-.btn {
-  background-color: #469165;
-  border: none;
-  padding: 12.5px 16px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  cursor: pointer;
-}
 
 /* MAIN STYLING  */
 
 nav .nav-content {
-  /* background-color: aqua; */
-  /* width: 85%;
-  max-width: 1360px; */
+  width: 85%;
+  max-width: 1360px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 nav .menu {
@@ -46,6 +35,19 @@ nav .menu a {
 nav .nav-logo {
   margin-top: 16px;
   margin-bottom: 16px;
+}
+.btn {
+  background-color: #469165;
+  border: none;
+  padding: 12.5px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn:hover{
+   background-color: #2c5f41;
 }
 .banner {
   background-image: url(./assets/hero-bg.png);
@@ -68,11 +70,17 @@ nav .nav-logo {
   border-radius: 1000px;
   color: #469165;
   background-color: #ffffff;
-  padding: 8px 15px;
+  padding: 8px 0;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
+
 .banner-info .banner-heading h1 {
   color: #ffffff;
+  opacity: 90%;
   font-size: 72px;
   line-height: 84px;
 }
@@ -88,12 +96,15 @@ nav .nav-logo {
   display: flex;
   max-width: 465px;
   margin: 0 auto;
-  /* background-color: aqua; */
 }
-.banner-button #vault {
-  background-color: #30b868;
+.banner-button .vault {
+  background-color: #469165;
   max-width: 251px;
-  padding: 16px 40px;
+  padding: 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
@@ -101,15 +112,25 @@ nav .nav-logo {
   border: none;
   cursor: pointer;
 }
-.banner-button #works {
+.banner-button .works {
   max-width: 198px;
   margin: 0 auto;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   color: #ffffff;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 14px 35px;
+  padding: 14px 14px;
   cursor: pointer;
+}
+.vault:hover {
+  background-color: #2c5f41;
+}
+.works:hover {
+  background-color: rgba(0, 0, 0, 0.377);
 }
 .card-section {
   background-color: #93999f22;
@@ -135,11 +156,11 @@ nav .nav-logo {
   margin: 0 auto;
   display: flex;
   gap: 24px;
-  padding-bottom: 20px;
 }
 .card {
   width: 320px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: #ffffff;
 }
 .card-img {
@@ -171,27 +192,24 @@ nav .nav-logo {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 21px;
   padding: 0 24px;
 }
 .solution-container {
   width: 85%;
   max-width: 1360px;
-  margin: 0 auto;
-  padding: 120px;
+  height: 600px;
+  margin: 120px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
-  border: 2px solid salmon;
 }
 .img-knowledge {
-  width: 800px;
-  height: 600px;
+  width: 600px;
 }
 .solution-info {
-  width: 800px;
-  height: 400px;
+  width: 700px;
 }
 .solution-info h4 {
   color: #469165;
@@ -201,7 +219,7 @@ nav .nav-logo {
   margin-bottom: 16px;
 }
 .solution-info h2 {
-  font-size: 37px;
+  font-size: 48px;
   color: #001931;
   margin-bottom: 16px;
 }
@@ -214,12 +232,18 @@ nav .nav-logo {
 .solution-list {
   margin-left: 20px;
 }
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
 .solution-list li {
-  font-size: 15px;
   line-height: 20px;
   color: #001931;
 }
 .solution-list ul {
+  font-size: 16px;
   list-style-image: url(./assets/CheckCircle.png);
 }
 .ready-container {
@@ -229,6 +253,7 @@ nav .nav-logo {
   text-align: center;
   background-color: #93999f22;
   margin-bottom: 120px;
+  border-radius: 12px;
 }
 .ready-heading {
   padding: 80px 40px 24px;
@@ -240,6 +265,24 @@ nav .nav-logo {
 }
 .ready-info {
   padding: 0 40px 80px;
+}
+.ready-btn {
+  background-color: #469165;
+  border: none;
+  padding: 12.5px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.ready-btn:hover {
+  background-color: #2c5f41;
 }
 .ready-heading p {
   font-size: 16px;
@@ -289,7 +332,7 @@ footer {
   color: #ffffff;
 }
 hr {
-   width: 85%;
+  width: 85%;
   max-width: 1360px;
   margin: 0 auto;
   text-align: center;
@@ -305,5 +348,5 @@ hr {
 .footer-bottom p {
   font-size: 16px;
   line-height: 24px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
