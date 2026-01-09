@@ -9,7 +9,6 @@
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-
 }
 .btn {
   background-color: #469165;
@@ -18,15 +17,16 @@
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
 /* MAIN STYLING  */
 
-nav {
-  width: 85%;
-  max-width: 1360px;
+nav .nav-content {
+  /* background-color: aqua; */
+  /* width: 85%;
+  max-width: 1360px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -43,6 +43,71 @@ nav .menu a {
   color: #000000;
   text-decoration: none;
 }
- nav .nav-logo {
+nav .nav-logo {
   margin-top: 16px;
- }
+  margin-bottom: 16px;
+}
+.banner {
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .banner-content {
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 115px 120px 180px;
+}
+.banner-content .banner-info {
+  margin-bottom: 32px;
+}
+.banner-info .banner-title {
+  max-width: 230px;
+  margin: 0 auto;
+  border-radius: 1000px;
+  color: #469165;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  margin-bottom: 16px;
+}
+.banner-info .banner-heading h1 {
+  color: #ffffff;
+  font-size: 72px;
+  line-height: 84px;
+}
+.banner-info .banner-heading {
+  margin-bottom: 16px;
+}
+.banner-info #banner-para {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+.banner-content .banner-button {
+  display: flex;
+  max-width: 465px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.banner-button #vault {
+  background-color: #30b868;
+  max-width: 251px;
+  padding: 16px 40px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.banner-button #works {
+  max-width: 198px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 14px 35px;
+  cursor: pointer;
+}
