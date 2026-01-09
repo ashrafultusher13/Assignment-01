@@ -223,7 +223,7 @@ nav .nav-logo {
   list-style-image: url(./assets/CheckCircle.png);
 }
 .ready-container {
-   width: 85%;
+  width: 85%;
   max-width: 1360px;
   margin: 0 auto;
   text-align: center;
@@ -251,5 +251,59 @@ nav .nav-logo {
   font-size: 16px;
   line-height: 20px;
   color: #627382;
-  
+}
+
+footer {
+  background-color: #001931;
+}
+.footer-info {
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+}
+.footer-logo {
+  width: 350px;
+}
+.footer-logo img {
+  width: 140px;
+}
+.social {
+  width: 250px;
+}
+.social p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+.social-icons a {
+  font-size: 20px;
+  color: #ffffff;
+}
+hr {
+   width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+}
+.footer-bottom {
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0 30px;
+}
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
 }
